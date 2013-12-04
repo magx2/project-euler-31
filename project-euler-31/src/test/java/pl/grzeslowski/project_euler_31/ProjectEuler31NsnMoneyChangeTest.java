@@ -21,8 +21,8 @@ public class ProjectEuler31NsnMoneyChangeTest {
 
     @Parameters
     public static Collection<Object[]> data() {
-        final Object[][] data = new Object[][] { { 1, 0 }, { 2, 1 },
-                { 5, 1 + 1 + 1 } };
+        final Object[][] data = new Object[][] { { 1, 1 }, { 2, 2 },
+                { 5, 4 } };
         return Arrays.asList(data);
     }
 
