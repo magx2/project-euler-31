@@ -6,18 +6,18 @@ public class ProjectEuler31NsnMoneyChange implements ProjectEuler31 {
 
     @Override
     public long waysToChangeCoin(final int coin) {
-        return waysToChangeCoin(coin, coinFactory.getNextCoin(coin));
+        return waysToChangeCoin(coin, coin);
     }
 
     private long waysToChangeCoin(final int coin, final int coinToUse) {
-        if (coinToUse == 1) {
-            return 1L;
+        if (coinToUse == 0 && coin != 0) {
+            return 0L;
+        } else if (coin < 0) {
+            return 0L;
         } else if (coin == 0) {
             return 1L;
-        } else if (coin < 0) {
-            return 0;
-        } else if (coinToUse == 0) {
-            return 0L;
+        } else if (coinToUse == 1) {
+            return 1L;
         } else {
 
             // left side uses coinToUse
