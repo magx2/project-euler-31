@@ -21,7 +21,7 @@ public class CoinFactory_getCoin {
 
     @Parameters
     public static Collection<Object[]> data() {
-        final Object[][] data = new Object[][] { { 1, 1 }, { 2, 1 },
+        final Object[][] data = new Object[][] { { 1, 0 }, { 2, 1 },
                 { 5, 2 }, { 10, 5 },
                 { 20, 10 },
                 { 50, 20 }, { 100, 50 }, { 200, 100 } };

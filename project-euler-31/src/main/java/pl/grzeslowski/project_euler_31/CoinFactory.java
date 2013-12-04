@@ -23,7 +23,7 @@ public final class CoinFactory {
     }
 
     public int getNextCoin(final int coin) {
-        int lastCoin = coins.get(0);
+        int lastCoin = 0;
 
         for (final Integer c : coins) {
             if (coin == c) {
